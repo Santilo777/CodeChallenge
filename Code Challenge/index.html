@@ -4,22 +4,24 @@
     <title>Formulario de Registro</title>
 </head>
 <body>
-    <h1>Formulario de Registro</h1>
-    <form id="registroForm">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre"><br>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido"><br>
-
-        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-        <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br>
-
-        <button type="button" id="enviarBtn">Enviar</button>
-    </form>
-
-    <div id="respuesta"></div>
-
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form id="formulario" class="form-group">
+                <h2 class="text-center">Formulario de Registro</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control"><br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" class="form-control"><br><br>
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" class="form-control"><br><br>
+                <input type="submit" value="Enviar" class="btn btn-primary btn-block">
+            </form>
+        </div>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
